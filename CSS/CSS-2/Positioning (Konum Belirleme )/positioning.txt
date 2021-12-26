@@ -1,0 +1,56 @@
+Positioning Nedir ?
+
+Positioning sayfada bulunan yazı-şekil veya herhangi birşeyin 
+konumunu belirlemek için kullanılır
+
+Nasıl Kullanılır ? 
+
+1-) Static
+
+Varsayılan konumlandırmadır. Divin özelliği mesela alt alta konumlandırmadır onun gibi çok kullanmıcan
+
+2-)Relative
+
+Css positioni relative verdiğinde Sayfadaki bir şeye dört köşeden konum verebiliyorsun. 
+ Relative özelliği verdiğimizde divin yüksekliği veya genişliği bulunduğu konumdan itibaren başlar. Tarayıcının köşelerinden değil. Div hangi konumdaysa ordan itibaren yükseklik ve genişliği sayar.
+div {
+    position : relative
+    yukardan yükseklik=  top:30px;
+    soldan genişlik = left:30 px;
+    sağdan genişlik right;
+    aşağıdan yükseklik = bottom:30 px;
+}
+Konumlandıracağın div eğer başka bir divin içerisinde ise örneğin div#second gibi burda divin second divinin içerisinde. Boyle olduğunda div içerisinde olduğu divin köşelerinden itibaren konum alır.
+Örnek aşağıdaki kod gibi.Second divinin köşelerinden itibaren konum alır. 
+div#second }
+Position: relative
+top:30px;
+}
+
+2-)Absolute
+
+Css positioni absolute verdiğinde Sayfadaki bir şeye dört köşeden konum verebiliyorsun. 
+ Absolutenin farkı örneğin relative de dive konum verdiğinde bulunduğu konumu köşeler sayarak ordan itibaren yükseklik veya genişlik veriyorduk. 
+ Absolute de tarayıcının köşelerine göre konum veriyorsun. Konumlandırma da varsayılanı üstünden ve solundan hızalanmaya başlar.
+  Örneğin yukarısında bir div varsa onun üzerinede gelebilir.
+
+div {
+    position : absolute
+    yukardan yükseklik=  top:30px;
+    soldan genişlik = left:30 px;
+    sağdan genişlik right;
+    aşağıdan yükseklik = bottom:30 px;
+
+}
+
+2-)Fixed
+
+Eğer bir divin position özelliğine fixed verirsen ve top ve rigth konumlarını belirtirsen sayfa aşağıya veya yukarı inip çıksada o div konumlandırdığın yerde aşağı yukarı doğru gelir.
+Örneğin internet sayfasının yukardakı ana sayfa butonları gibi sayfa aşağı doğru insede o butonlar seninle birlikte aşağı doğru gelir.
+
+2-)Sticky
+
+Eğer bir divin position özelliğine sticky verirsen div yukarıda sabitlenir ve sayfa aşağı yukarı indikçe oda seninle birlikte gelir. Fixeda benzer. Ekstra özellik olarak eğer sticky'nin 
+top:50px; dersen sayfa 50 piksel aşağı indikten sonra sticky de senle birlikte gelir. Yani stickynin üzerinde 50px lik boş alan kalır. Örneği incele
+Örneğin internet sayfasının yukardakı ana sayfa butonları gibi sayfa aşağı doğru insede o butonlar seninle birlikte aşağı doğru gelir.
+

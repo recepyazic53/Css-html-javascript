@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Box Model</title>
+    <style>
+      /* Content Box: Widht 300 px verdin ve paddinge 10 px verdiğinde totalte dive 320 px olur.   
+		
+		Border box: padding ve borderi da içerisinde barındırır ve dive widht: 300 px verdiğinde
+		 border ve paddingle beraber totalde 300 px olur.*/
+      #box1 {
+        box-sizing: content-box;
+        width: 300px;
+        height: 100px;
+        background: green;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 10px solid black;
+      }
+
+      #box2 {
+        box-sizing: border-box;
+        width: 300px;
+        height: 100px;
+        background: gold;
+        padding: 10px;
+        border: 10px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="box1">300px + (10px*2) + (10px*2) => 340px</div>
+    <div id="box2">260px + (10px*2) + (10px*2) => 300px</div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Sticky örnek = div tarayıcıyı aşağı veya yukarı gitsede bulunduğu konumda oda aşağı yukarı gelir. Örneği aşağıda çalıştır bak. 
+      Topa verdiğin px değerine göre yukardan boşluk bıraktı fixed'dan farkı bu.*/
+      .box {
+        width: 120px;
+        height: 120px;
+      }
+      #second {
+        position: sticky;
+        top: 100px;
+        width: 500px;
+        height: 50px;
+        background-color: brown;
+      }
+
+      #third {
+        background-color: rgb(158, 18, 151);
+        position: relative;
+        left: 30px;
+        top: 200px;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
+      cupiditate, quos maiores autem accusamus saepe vitae ipsa nisi laborum
+      culpa ipsum exercitationem beatae consequatur mollitia adipisci porro
+      facere doloremque. Praesentium!
+    </p>
+    <div class="box" id="second">box 2</div>
+    <div class="box" id="third">box 3</div>
+    <div style="height: 2000px"></div>
+  </body>
+</html>

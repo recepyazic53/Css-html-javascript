@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Fixed örnek = div tarayıcıyı aşağı veya yukarı gitsede bulunduğu konumda oda aşağı yukarı gelir. Örneği aşağıda çalıştır bak. 
+      Mor buton sayfa aşağı indiğinde kayboluyor.Çünkü positionu absolute ama diğer butonlar fixed olduğu için sayfayla birlikte aşağı-yukarı geliyor*/
+      .box {
+        width: 120px;
+        height: 120px;
+      }
+      #second {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+      }
+      #first {
+        background-color: rgb(20, 190, 20);
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        width: 100px;
+        height: 100px;
+      }
+
+      #third {
+        background-color: rgb(158, 18, 151);
+        position: absolute;
+        left: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box" id="first">box 1</div>
+    <div class="box" id="second">box 2</div>
+    <div class="box" id="third">box 3</div>
+    <div style="height: 2000px"></div>
+  </body>
+</html>

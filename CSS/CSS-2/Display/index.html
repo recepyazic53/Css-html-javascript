@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css Display</title>
+    <style>
+      /** Display : none (Sayfada görünmez)| 
+	inline(Backgorund vs Satır kadar yer kaplar.satır içinde yanyana gösterir genişlik ve yükseklik veremeyiz. Verebilmek için displayını inline-block yapmak gerekir. ) | 
+	block(sayfayı kapsar div varsayılanı) | 
+	inline-block display inline olanlara yükseklik ve genişlik verebilmek için displayı inline-block yapılır */
+
+      /** alt alta olan yazılar veya resimleri yan yana getirmek için displaylarını inline yapabilirsin. 2.seçenek olarak float:left komutunu da kullabilirsin. */
+
+      /** Override Defaults */
+
+      div {
+        display: inline-block;
+        height: 200px;
+        background: red;
+        margin: 5px;
+      }
+
+      #first {
+        width: 500px;
+      }
+
+      span {
+        background: blue;
+        width: 200px;
+        height: 100px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="first">first</div>
+    <div id="second">second</div>
+
+    <span>deneme 1 Lorem ipsum.</span>
+    <span>deneme 2</span>
+    <span>deneme 3</span>
+    <br />
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+  </body>
+</html>

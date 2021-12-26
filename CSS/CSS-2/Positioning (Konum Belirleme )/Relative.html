@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Relative örnek = div bulunduğu noktayı köşeleri alarak oralardan itibaren ötelenir.*/
+      .box {
+        width: 120px;
+        height: 120px;
+      }
+      #second {
+        position: relative;
+        top: 20px;
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+      }
+      #first {
+        background-color: rgb(20, 190, 20);
+        width: 100px;
+        height: 100px;
+      }
+
+      #third {
+        background-color: rgb(158, 18, 151);
+        width: 100px;
+        height: 100px;
+      }
+
+      /*Eğer div başka bir divin içerisinde ise ve içerisinde olduğu divin (dıştaki) köşelerine göre  konum almasını istiyorsak kodu aşağıdadır: */
+
+      .mbox {
+        /*İçerde olan divin style belirliyoruz ve position absolute oluyor.  */
+        width: 30px;
+        height: 30px;
+        background: yellow;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+      }
+
+      /* #second {İçerde olan divin dıştaki div olan yani second divinin köşelerini varsayılan olarak alabilmesi için dıştaki divin positionun : realative olması gerekiyor. Aşağıdaki gibi  
+        position: relative;
+        top: 20px;
+        background-color: brown;
+        width: 100px;
+        height: 100px; */
+    </style>
+  </head>
+  <body>
+    <div class="box" id="first">box 1</div>
+    <div class="box" id="second">
+      <div class="mbox"></div>
+    </div>
+    <div class="box" id="third">box 3</div>
+  </body>
+</html>
